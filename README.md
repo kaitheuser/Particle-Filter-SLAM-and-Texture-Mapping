@@ -12,13 +12,16 @@ Texture mapping is also part of the particle filter SLAM algorithm to add RGB te
 
 ## How to Run "Particle Filter SLAM and Texture Mapping"?
 1.) Open up the "particle_filter_SLAM.py".
+
 2.) Run the "particle_filter_SLAM.py" code to perform particle filter SLAM and texture mapping by default.
+
 3.) It will output and save the Occupancy-grid Map with Vehicle Trajectory and Textured Map
 
 ## Parameters that Can be Changed:
 1.) texture_mapping_settings (Line 27)
     - True -> Activate Texture Mapping for the Particle Filter SLAM Algorithm.
     - False -> Deactivate Texture Mapping for the Particle Filter SLAM Algorithm.
+
 2.) num_Particles (Line 135)
     - integer type
     - Recommended range (1 - 300)
