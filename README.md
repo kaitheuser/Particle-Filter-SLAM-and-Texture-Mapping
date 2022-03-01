@@ -7,8 +7,11 @@ Particle filter simultaneous localization and mapping (SLAM) is implemented to l
 
 Texture mapping is also part of the particle filter SLAM algorithm to add RGB texture to the occupancy-grid map given that the stereo camera images are provide in the link above.
 
-## Particle Filter SLAM result
+## Particle Filter SLAM Result
 ![Particle Filter SLAM Occupancy-grid Map at 1,160,507th FOG timestamp](./Results/OGmapSLAM1160507.png)
+
+## Particle Filter SLAM Texture Mapping Result
+![Particle Filter SLAM RGB Occupancy-grid Map at 1,160,507th FOG timestamp](./Results/OGmapRGBno1160507.png)
 
 ## Requirement to run the "particle_filter_SLAM.py":
 1.) Download the data above and store them in the "data" folder.
