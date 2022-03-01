@@ -19,14 +19,14 @@ Texture mapping is also part of the particle filter SLAM algorithm to add RGB te
 
 ## Parameters that Can be Changed:
 1.) texture_mapping_settings (Line 27)
-    - True -> Activate Texture Mapping for the Particle Filter SLAM Algorithm.
-    - False -> Deactivate Texture Mapping for the Particle Filter SLAM Algorithm.
+- True -> Activate Texture Mapping for the Particle Filter SLAM Algorithm.
+- False -> Deactivate Texture Mapping for the Particle Filter SLAM Algorithm.
 
 2.) num_Particles (Line 135)
-    - integer type
-    - Recommended range (1 - 300)
-    - Higher the number of particles, slower the program runs.
-    - Lower the number of particles, faster the program runs.
+- integer type
+- Recommended range (1 - 300)
+- Higher the number of particles, slower the program runs.
+- Lower the number of particles, faster the program runs.
 
 ## "particle_filter_SLAM.py" Description:
 - Initialize Occupancy-grid map, textured map (RGB Occupancy-grid Map).
