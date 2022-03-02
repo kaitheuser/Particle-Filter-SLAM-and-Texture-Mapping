@@ -74,7 +74,7 @@ def update(particle_Poses, particle_Weights, num_Particles, MAP, lidar_angles, l
 
     # Determine the points that are at the end of the laser line
     lidar_end_pt_x = lidar_ranges * np.cos(lidar_angles)
-    lidar_end_pt_y = lidar_ranges * np.sin(lidar_ranges)
+    lidar_end_pt_y = lidar_ranges * np.sin(lidar_angles)
 
     # LIDAR homogeneous positions in vehicle frame
     lidar_homo_coords = np.vstack((lidar_end_pt_x, 

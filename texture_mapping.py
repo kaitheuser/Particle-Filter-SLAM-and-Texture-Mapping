@@ -138,7 +138,7 @@ def texture_map(RGB_map, MAP, RotMat_cam2vehicle, TransVec_cam2vehicle, particle
         plt.xlabel("Width [m]")
         plt.ylabel("Length [m]")
         plt.show()
-        plt.savefig('OGmapRGBfree' + str(iteration) + '.png', bbox_inches='tight')
+        plt.savefig('OGmapRGB' + str(iteration) + '.png', bbox_inches='tight')
         plt.pause(0.001) # Prevent crashing
 
     return RGB_map

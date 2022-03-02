@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt; plt.ion()
 matplotlib.use('Qt5Agg')
 import numpy as np
 import pr2_utils
+import warnings
 
 def display_Occupancy_Grid_Map(MAP, vehicle_trajectory, iteration):
     """
@@ -106,7 +107,7 @@ def occupancy_grid_mapping(MAP, lidar_angles, lidar_ranges, RotMat_lidar2vehicle
 
     # Determine the points that are at the end of the laser line
     lidar_end_pt_x = lidar_ranges * np.cos(lidar_angles)
-    lidar_end_pt_y = lidar_ranges * np.sin(lidar_ranges)
+    lidar_end_pt_y = lidar_ranges * np.sin(lidar_angles)
 
     # Convert to 4D-Cartesian homogeneous coordinates.
     positions_vehicle = np.vstack((lidar_end_pt_x, 
@@ -160,7 +161,8 @@ def occupancy_grid_mapping(MAP, lidar_angles, lidar_ranges, RotMat_lidar2vehicle
 
     return MAP
 
-
+# Suppress warnings.
+warnings.filterwarnings('ignore')
 
 
 
