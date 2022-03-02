@@ -18,7 +18,7 @@ import texture_mapping
 """
 debug_array_Shape = False
 debug_list_Length = False
-debug_initialized_map = True
+debug_initialized_map = False
 debug_sync_timestamps = False
 
 """
@@ -241,7 +241,6 @@ for idx in tqdm(range(0, num_FOG_data)):
         ## Texture Mapping
         if texture_mapping_settings and idx % 100 == 0 or idx == num_FOG_data-1:
             RGB_map = texture_mapping.texture_map(RGB_map, MAP, RotMat_cam2vehicle, TransVec_cam2vehicle, particle_Pose_with_greatest_weight, K_intrinsic_left, K_intrinsic_right, synced_cam_time_left, synced_cam_time_right, baseline_cam, idx, num_FOG_data, left_cam_distortion_coeffs, right_cam_distortion_coeffs)
-            #RGB_map = texture_mapping.texture_map(RGB_map, MAP, RotMat_cam2vehicle, TransVec_cam2vehicle, particle_Pose_with_greatest_weight, K_intrinsic_left, synced_cam_time, baseline_cam, idx, num_FOG_data)
 
         ## Resampling process if required
         # Calculate the number of effective particles.
